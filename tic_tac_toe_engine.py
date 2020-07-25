@@ -2,7 +2,7 @@ import random
 import itertools as it
 
 """
-curl -d '{ "0" : { "0" : "P", "1" : "C", "2" : "P"}, "1" : { "0" : "", "1" : "C", "2" : "P"}, "2" : { "0": "", "1" : "", "2" : ""}}' -H "Content-Type: application/json" -X POST 0.0.0.0:80/tic_tac_toe_engine
+curl -d '{ "0" : { "0" : "P", "1" : "C", "2" : "P"}, "1" : { "0" : "", "1" : "C", "2" : "P"}, "2" : { "0": "", "1" : "", "2" : ""}}' -H "Content-Type: application/json" -X POST 0.0.0.0:8080/tic_tac_toe_engine
 
 """
 

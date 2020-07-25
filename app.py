@@ -34,7 +34,7 @@ class PlayForm(FlaskForm):
 
 def query_tic_tac_toe_engine(state):
     payload = state
-    res = requests.post('http://0.0.0.0:80/tic_tac_toe_engine', json=payload, headers={'Content-Type': 'application/json'})
+    res = requests.post('http://0.0.0.0:8080/tic_tac_toe_engine', json=payload, headers={'Content-Type': 'application/json'})
     res_json = res.json()
     return res_json['the_play']
 
@@ -88,4 +88,4 @@ def tic_tac_toe_engine():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80, debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
